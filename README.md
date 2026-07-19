@@ -2,86 +2,154 @@
 
 A full-stack web application that allows users to view stores and submit ratings from **1 to 5 stars**.
 
-The application includes **role-based authentication** with three types of users:
+The application supports three roles:
 
-- 👨‍💼 System Administrator
+- 👨‍💼 Admin
 - 👤 Normal User
 - 🏪 Store Owner
 
-Built with React, Node.js, Express, Prisma, PostgreSQL and Tailwind CSS.
+---
+
+# 🚀 About Project
+
+Developed as a **Full Stack Internship Coding Challenge**.
+
+Implemented a complete store rating system with:
+- JWT authentication
+- Role-based authorization
+- Protected routes
+- REST APIs
+- Store management
+- Rating submission system
+- Responsive UI
+
+Admins manage users and stores, normal users can rate stores, and store owners can monitor ratings.
 
 ---
 
 # ✨ Features
 
-## 🔐 Authentication
-- Single login system for all users
-- JWT-based authentication
-- Role-based access control
-- Protected routes
-
----
-
-## 👨‍💼 Admin Features
-
-- Admin dashboard with:
-  - Total users
-  - Total stores
-  - Total ratings
-- Add new users
-- Add new stores
-- View all users
-- View all stores
+## 👨‍💼 Admin
+- Dashboard statistics
+- Add users and stores
+- View users and stores
 - Manage application data
 
----
-
-## 👤 Normal User Features
-
-- Create an account
-- Login securely
-- View registered stores
-- Search stores
-- View overall store ratings
-- Submit ratings (1-5 stars)
-- Update submitted ratings
+## 👤 Normal User
+- Signup/Login
+- View and search stores
+- Submit and update ratings
 - Change password
 
----
-
-## 🏪 Store Owner Features
-
-- Login to owner dashboard
-- View store information
+## 🏪 Store Owner
+- Owner dashboard
 - View average rating
 - View users who rated the store
-- Monitor customer feedback
 
 ---
 
 # 🛠️ Tech Stack
 
-## Frontend
-
+### Frontend
 - React.js
 - Vite
 - Tailwind CSS
 - DaisyUI
 - Axios
-- React Router
 
-## Backend
-
+### Backend
 - Node.js
 - Express.js
 - Prisma ORM
-- JWT Authentication
-- bcrypt
+- JWT
 
-## Database
-
+### Database
 - PostgreSQL
 
 ---
 
-# 📂 Project Structure
+# ⚙️ Setup
+
+## Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create `.env`:
+
+```env
+DATABASE_URL="your_postgres_url"
+JWT_SECRET="your_secret"
+```
+
+Run:
+
+```bash
+npx prisma db push
+npm start
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+# 🧪 Test Accounts
+
+### 👨‍💼 Admin
+
+```
+Email: admin@gmail.com
+Password: Admin@123
+```
+
+### 👤 User
+
+```
+Email: user@gmail.com
+Password: User@123
+```
+
+### 🏪 Store Owner
+
+```
+Email: owner@gmail.com
+Password: Owner@123
+```
+
+---
+
+# 📂 Structure
+
+```
+Store Rating App
+
+├── backend
+│   ├── routes
+│   ├── controllers
+│   ├── prisma
+│   └── server.js
+│
+└── frontend
+    ├── src
+    │   ├── pages
+    │   ├── components
+    │   └── api
+    └── package.json
+```
+
+---
+
+# 👩‍💻 Developer
+
+**Dhrishti Shetty**  
+Full Stack Developer | MERN Stack Developer
